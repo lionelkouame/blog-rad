@@ -1,6 +1,7 @@
 api_platform:
-    title: Hello API Platform
-    version: 1.0.0
+    title: Blog RAD API
+    description: Follow the Rapid Application Development concept with API Platform and doctrine
+    version: 0.0.1
     defaults:
         stateless: true
         cache_headers:
