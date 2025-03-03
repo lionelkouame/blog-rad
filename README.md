@@ -1,2 +1,2 @@
 # blog-rad
-the target  is experiment the blog implementation with APIPlatform.
+The target is to experiment with the blog implementation using API Platform.
