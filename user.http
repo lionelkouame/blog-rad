@@ -1,0 +1,21 @@
+## AJout nouveau user
+
+POST http://localhost:8000/api/users
+Content-Type: application/ld+json
+
+{
+  "email": "totokouame@gmai.com",
+  "roles": [
+    "ROLE_USER"
+  ],
+  "password": "azertyuiop"
+}
+
+### Authentification
+POST http://localhost:8000/auth
+Content-Type: application/ld+json
+
+{
+    "email": "totokouame@gmai.com",
+    "password": "azertyuiop"
+}
