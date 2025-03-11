@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use ApiPlatform\Metadata\ApiResource;
+use ApiPlatform\Metadata\Get;
+use ApiPlatform\Metadata\GetCollection;
 use ApiPlatform\Metadata\Post;
 use App\Listener\UserListener;
 use App\Repository\UserRepository;
@@ -16,7 +18,9 @@ use Symfony\Flex\Unpack\Operation;
 #[ORM\Entity(repositoryClass: UserRepository::class)]
 #[ApiResource(
     operations: [
-        new Post()
+        new Post(),
+        new Get(),
+        new GetCollection()
     ]
 )]
 #[ORM\Table(name: '`user`')]
