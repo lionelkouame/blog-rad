@@ -4,7 +4,7 @@ POST http://localhost:8000/api/users
 Content-Type: application/ld+json
 
 {
-  "email": "totokouame@gmai.com",
+  "email": "jordy.luettgen@example.org",
   "roles": [
     "ROLE_USER"
   ],
@@ -16,6 +16,6 @@ POST http://localhost:8000/auth
 Content-Type: application/ld+json
 
 {
-    "email": "totokouame@gmai.com",
+    "email": "vanessa08@example.com",
     "password": "azertyuiop"
 }

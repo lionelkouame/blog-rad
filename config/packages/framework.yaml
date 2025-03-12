@@ -10,6 +10,9 @@ framework:
 
 when@test:
     framework:
+        router:
+            default_uri: 'http://localhost:8000'
+
         test: true
         session:
             storage_factory_id: session.storage.factory.mock_file
