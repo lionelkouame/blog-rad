@@ -16,3 +16,6 @@ Specified by the RFC 2119, the key words "MUST", "MUST NOT", "REQUIRED", "SHALL"
 
 ##  User resource
 - [Registration and security](docs/resources/user/registration_security.md)
+
+##  Category resource
+- [Category](docs/resources/category/category.md)
