@@ -1,6 +1,6 @@
 ## AJout nouveau user
 
-POST http://localhost:8000/api/users
+POST https://localhost:8000/api/users
 Content-Type: application/ld+json
 
 {
@@ -12,7 +12,7 @@ Content-Type: application/ld+json
 }
 
 ### Authentification
-POST http://localhost:8000/auth
+POST https://localhost:8000/auth
 Content-Type: application/ld+json
 
 {
