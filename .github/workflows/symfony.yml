@@ -43,6 +43,8 @@ jobs:
         touch data/database.sqlite
     - name: Execute migration
       run: php bin/console doctrine:schema:update --force --env=test
+      env:
+        DATABASE_URL: sqlite:///%kernel.project_dir%/data/database.sqlite
     - name: Execute tests (Unit and Feature tests) via PHPUnit
       env:
         DATABASE_URL: sqlite:///%kernel.project_dir%/data/database.sqlite
