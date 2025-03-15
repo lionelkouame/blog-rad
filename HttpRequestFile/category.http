@@ -1,0 +1,11 @@
+POST https://localhost:8000/api/categories
+Content-Type: application/ld+json
+
+{
+  "name": "Ma cat 1",
+  "extract": "test  de mon API",
+  "description": "coucou voi ma desc",
+  "createdAt": "2025-03-15T03:41:40.125Z",
+  "updatedAt": "2025-03-15T03:41:40.125Z",
+  "code": "CODE_CAT"
+}

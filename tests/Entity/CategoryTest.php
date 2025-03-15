@@ -9,8 +9,9 @@ use Symfony\Contracts\HttpClient\Exception\RedirectionExceptionInterface;
 use Symfony\Contracts\HttpClient\Exception\ServerExceptionInterface;
 use Symfony\Contracts\HttpClient\Exception\TransportExceptionInterface;
 
-class UserTest extends ApiTestCase
+class CategoryTest extends ApiTestCase
 {
+
     /**
      * @throws TransportExceptionInterface
      * @throws ServerExceptionInterface
@@ -18,7 +19,7 @@ class UserTest extends ApiTestCase
      * @throws DecodingExceptionInterface
      * @throws ClientExceptionInterface
      */
-    public function testCollection(): void
+    public function testCollection()
     {
         $client = static::createClient();
         $baseUrl = 'https://localhost:8000';
@@ -40,7 +41,7 @@ class UserTest extends ApiTestCase
         $token = $data['token'];
 
         // 🔹 Étape 2 : Requête protégée avec le token
-        $client->request('GET', $baseUrl.'/api/users', [
+        $client->request('GET', $baseUrl.'/api/categories', [
             'headers' => [
                 'Authorization' => 'Bearer ' . $token,
             ],
@@ -48,8 +49,11 @@ class UserTest extends ApiTestCase
 
         $this->assertResponseIsSuccessful();
         $this->assertJsonContains([
-            '@context' => '/api/contexts/User',
+            '@context' => '/api/contexts/Category',
             '@type' => 'Collection',
         ]);
+
+
     }
+
 }
