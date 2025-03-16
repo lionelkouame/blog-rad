@@ -34,6 +34,9 @@ class Category
     #[ORM\Column(length: 255)]
     private ?string $code = null;
 
+    #[ORM\Column(length: 255)]
+    private string $status = 'DRAFT';
+
     public function getId(): ?int
     {
         return $this->id;
@@ -117,4 +120,15 @@ class Category
 
         return $this;
     }
+
+    public function getStatus(): string
+    {
+        return $this->status;
+    }
+
+    public function setStatus(string $status): void
+    {
+        $this->status = $status;
+    }
+
 }

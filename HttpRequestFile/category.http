@@ -9,3 +9,7 @@ Content-Type: application/ld+json
   "updatedAt": "2025-03-15T03:41:40.125Z",
   "code": "CODE_CAT"
 }
+
+### collection
+GET https://localhost:8000/api/categories
+Content-Type: application/ld+json
